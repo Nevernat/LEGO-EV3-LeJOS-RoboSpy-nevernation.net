@@ -1,0 +1,164 @@
+body{
+    background-color: #242424;
+    font-size: 12px;
+}
+#remote{
+    position: absolute;
+    width: 890px;
+    height: 642px;
+}
+#video{
+    position: absolute;
+    top: 215px;
+    left: 45px;
+    width: 480px;
+    height: 360px;
+    z-index: 1;
+}
+#remote_panel{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 890px;
+    height: 642px;
+    background-image: url(img/console_bg.png);
+    z-index: 10;
+}
+#remote_adr{
+    position: absolute;
+    top: 152px;
+    left: 38px;
+    width: 226px;
+    height: 24px;
+    padding: 2px;
+    z-index: 50;
+    border: none;
+    background: none;
+    color: #aad400;
+    font-family: monospace;
+    font-size: 12px;
+}
+.led{
+    position: absolute;
+    background-color: #f86900;
+    z-index: 5;
+    visibility: hidden;
+}
+#led_connected{
+    top: 31px;
+    left: 164px;
+    height: 24px;
+    width: 24px;
+}
+#led_deployed{
+    top: 68px;
+    left: 164px;
+    height: 24px;
+    width: 24px;
+}
+#led_undeployed{
+    top: 104px;
+    left: 164px;
+    height: 24px;
+    width: 24px;
+}
+
+.led_bat{
+    position: absolute;
+    left: 795px;
+    height: 19px;
+    width: 57px;
+    background-color: #f86900;
+    z-index: 5;
+    visibility: hidden;
+}
+#led_bat_4{ top: 247px; }
+#led_bat_3{ top: 268px; }
+#led_bat_2{ top: 289px; }
+#led_bat_1{ top: 310px; }
+
+.button_direction{
+    width: 70px;
+    height: 70px;
+    z-index: 8;
+    position: absolute;
+    cursor: pointer;
+}
+#motor_up{   top: 418px;     left: 644px; }
+#motor_down{ top: 522px;     left: 644px; }
+#motor_lef{  top: 470px;     left: 590px; }
+#motor_rig{  top: 470px;     left: 697px; }
+
+#cam_up{     top: 202px;     left: 644px; }
+#cam_down{   top: 309px;     left: 644px; }
+#cam_lef{    top: 256px;     left: 590px; }
+#cam_rig{    top: 256px;     left: 697px; }
+
+.button_speed{
+    width: 32px;
+    height: 32px;
+    z-index: 8;
+    position: absolute;
+    cursor: pointer;
+}
+#speed_5{   top: 423px;     left: 807px; }
+#speed_4{   top: 455px;     left: 807px; }
+#speed_3{   top: 488px;     left: 807px; }
+#speed_2{   top: 520px;     left: 807px; }
+#speed_1{   top: 553px;     left: 807px; }
+
+#log{
+    position: absolute;
+    width: 246px;
+    height: 124px;
+    top: 43px;
+    left: 299px;
+    color: #aad400;
+    z-index: 20;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 4px;
+}
+
+.btn{
+    position: absolute;
+    z-index: 30;
+    width: 100px;
+    height: 26px;
+    left: 40px;
+    background-color: #3e3e3e;
+    color: #ccc;
+    border: 1px solid #222;
+    border-top: 1px solid #555;
+    border-left: 1px solid #555;
+    cursor: pointer;
+}
+
+#btn_connect{ top: 30px;  }
+#btn_deploy{  top: 66px;  }
+#btn_undeploy{ top: 101px;  }
+
+#btn_stop{
+    position: absolute;
+    top: 58px;
+    left: 759px;
+    height: 80px;
+    width: 80px;
+    z-index: 40;
+    cursor: pointer;
+}
+
+#bkg_radar{
+    position: absolute;
+    top: 21px;
+    left: 577px;
+    z-index: 1;
+}
+#bar_radar{
+    position: absolute;
+    visibility: hidden;
+    top: 10px;
+    left: 577px;
+    z-index: 8;
+}

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link href="remote.css" rel="stylesheet" type="text/css" />
+        <script src="remote.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="remote">
+            <div id="remote_panel"></div>
+
+            <input type="text" id="remote_adr" value="192.168.1.104" />
+
+            <img id="motor_up" onmouseup="stop();" onmousedown="motor('up');" class="button_direction" src="img/btn_up_off.png"/>
+            <img id="motor_down" onmouseup="stop();" onmousedown="motor('down');" class="button_direction" src="img/btn_down_off.png"/>
+            <img id="motor_lef" onmouseup="stop();" onmousedown="motor('lef');" class="button_direction" src="img/btn_splef_off.png"/>
+            <img id="motor_rig" onmouseup="stop();" onmousedown="motor('rig');" class="button_direction" src="img/btn_sprig_off.png"/>
+
+            <img id="cam_up" onmouseup="stop();" onmousedown="cam('up');" class="button_direction" src="img/btn_up_off.png"/>
+            <img id="cam_down" onmouseup="stop();" onmousedown="cam('down');" class="button_direction" src="img/btn_down_off.png"/>
+            <img id="cam_lef" onmouseup="stop();" onmousedown="cam('lef');" class="button_direction" src="img/btn_lef_off.png"/>
+            <img id="cam_rig" onmouseup="stop();" onmousedown="cam('rig');" class="button_direction" src="img/btn_rig_off.png"/>
+
+            <img id="speed_1" onclick="speed(1)" class="button_speed" src="img/btn_small_off_1.png" />
+            <img id="speed_2" onclick="speed(2)" class="button_speed" src="img/btn_small_off_2.png" />
+            <img id="speed_3" onclick="speed(3)" class="button_speed" src="img/btn_small_off_3.png" />
+            <img id="speed_4" onclick="speed(4)" class="button_speed" src="img/btn_small_off_4.png" />
+            <img id="speed_5" onclick="speed(5)" class="button_speed" src="img/btn_small_off_5.png" />
+
+            <img id="video" src="img/no_signal.gif" />
+
+            <div id="log">device not connected</div>
+
+            <input type="button" id="btn_connect" class="btn" value="Connect" onclick="EV3_connect();" />
+            <input type="button" id="btn_deploy" class="btn" value="Camera" onclick="deploy();" />
+            <input type="button" id="btn_undeploy" class="btn" value="Engines" onclick="undeploy();" />
+
+            <div id="led_connected" class="led"></div>
+            <div id="led_deployed" class="led"></div>
+            <div id="led_undeployed" class="led"></div>
+
+            <div id="led_bat_4" class="led_bat"></div>
+            <div id="led_bat_3" class="led_bat"></div>
+            <div id="led_bat_2" class="led_bat"></div>
+            <div id="led_bat_1" class="led_bat"></div>
+
+            <img id="bkg_radar" src="img/radar_grid.png" />
+            <img id="bar_radar" src="img/radar_bar.gif" />
+
+
+            <img id="btn_stop" onmousedown="btn_stop_pressed(true);" onmouseup="btn_stop_pressed(false);" src="img/button_stop.png" />
+
+        </div>
+    </body>
+</html>
